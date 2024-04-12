@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<center>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imagem e Verso Emocional</title>
+<style>
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .image {
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+    }
+
+    .verse {
+        text-align: center;
+        font-size: 20px;
+        font-style: italic;
+        margin-top: 20px;
+    }
+    p{
+    color:#00CED1;
+    }
+</style>
+</head>
+<h1 style="color:#FF0000;">Todos somos espírito!</h1>
+<body>
+<div class="image-container">
+    <img class="image" src="https://i.pinimg.com/originals/de/f9/03/def903b3a224af74c4502744100522d2.gif">
+    <img class="image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitcpyaLwu3F_Dj7VdKGuKDQIUuE4agqiPsXVyQYn5SUfC6GSVpk1qc7-WV4kgB9OgfC6ed_yqwWAAmGXEs6rczGRzSOJ0fyVDWGdRV68qZoE16condv59kbkZ4v3m-0iZnBNf3orCiglB0uNQuvBDC0dzLpGT9UKnhm3IACPPgNJvkU2uOz6bV79j5UFGf/s1600/download23w.jpeg">
+    <img class="image" src="https://i.pinimg.com/originals/de/f9/03/def903b3a224af74c4502744100522d2.gif">
+    <img class="image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitcpyaLwu3F_Dj7VdKGuKDQIUuE4agqiPsXVyQYn5SUfC6GSVpk1qc7-WV4kgB9OgfC6ed_yqwWAAmGXEs6rczGRzSOJ0fyVDWGdRV68qZoE16condv59kbkZ4v3m-0iZnBNf3orCiglB0uNQuvBDC0dzLpGT9UKnhm3IACPPgNJvkU2uOz6bV79j5UFGf/s1600/download23w.jpeg">
+</div>
+<div class="verse">
+    <p>TODOS SOMOS ESPÍRITO!<br>Estamos aqui para evoluir, crescer.<br>Na verdade da vida,<br>crescer espiritual. A morte não existe,<br>mas sim, recomeços eternos.<br>Inacabados, na consciência do existir.<br>Todos somos um universal,<br>onde nos temos de completar!<br>Quando feito na forma de amor.<br>Ficamos mais perto da honestidade de amar!</p>
+</div>
+
+<script>
+    const images = document.querySelectorAll('.image');
+
+    images.forEach((image) => {
+        const randomX = Math.floor(Math.random() * window.innerWidth);
+        const randomY = Math.floor(Math.random() * window.innerHeight);
+
+        image.style.left = randomX + 'px';
+        image.style.top = randomY + 'px';
+    });
+</script>
+</body>
+</center>
+</html>
