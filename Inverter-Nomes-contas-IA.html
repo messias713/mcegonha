@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<center>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inverter Nomes e Contas</title>
+</head>
+<body background="https://1.bp.blogspot.com/-MtOT31LwuCQ/XjnZZB3-Y9I/AAAAAAAABA0/XrTYmpX6iWc-5Z4qUMJn0gjnZoCjgy8mQCLcBGAsYHQ/s1600/GranularScratchyEmeraldtreeskink-size_restricted.gif">
+<h1 style="color:blue;">Inverter Nomes e Contas IA.</h1>
+
+<label for="nome">Digite um nome:</label>
+<input type="text" id="nome">
+<button onclick="inverterNome()">Inverter Nome</button>
+<p id="nomeInvertido"></p>
+
+<label for="conta">Digite uma conta:</label>
+<input type="text" id="conta">
+<button onclick="inverterConta()">Inverter Conta</button>
+<p id="contaInvertida"></p>
+
+<script>
+function inverterNome() {
+    let nome = document.getElementById('nome').value;
+    let nomeInvertido = nome.split('').reverse().join('');
+    document.getElementById('nomeInvertido').innerText = `Nome Invertido: ${nomeInvertido}`;
+}
+
+function inverterConta() {
+    let conta = document.getElementById('conta').value;
+    let resultado = eval(conta);
+    let contaInvertida = `${conta} = ${resultado}`;
+    document.getElementById('contaInvertida').innerText = `Conta Invertida: ${contaInvertida}`;
+}
+</script>
+</body>
+</center>
+</html>
