@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<center>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fada Voando sobre a Água</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+dy {
+    margin: 0;
+}
+
+
+
+.fairy {
+    position: absolute;
+}
+</style>
+<body background="https://i.gifer.com/S4O3.gif">
+<h1 style="color:#FFFAF0;">Eu sou a fada do amor!<br>Voando nas aguas da paz.</h1>
+    <div class="river">
+        <div class="water"></div>
+    </div>
+    <img src="https://i.gifer.com/Pvgn.gif" alt="Fada" class="fairy">
+    
+    <script>const fairy = document.querySelector('.fairy');
+let position = 0;
+
+function fly() {
+    position += 1;
+    
+    if (position >= window.innerWidth) {
+        position = -200; // Reset the fairy's position
+    }
+    
+    fairy.style.left = position + 'px';
+    
+    requestAnimationFrame(fly);
+}
+
+fly();
+</script>
+</body>
+</center>
+</html>
+
+
