@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<center>
+<head>
+<meta charset="UTF-8">
+<title>Cascata de Água e Fadas</title>
+
+
+<style>
+ 
+ 
+  .fada {
+    position: absolute;
+    animation: voar 5s linear infinite;
+  }
+
+  @keyframes voar {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+</style>
+</head>
+<body background='https://i.gifer.com/embedded/download/19Xi.gif'>
+
+<script>
+  const numberOfFairies = 5; // Define o número de fadas
+
+  for (let i = 0; i < numberOfFairies; i++) {
+    const fada = document.createElement('img');
+    fada.src = 'https://i.gifer.com/JuuW.gif'; // adicione a imagem da fada
+    fada.classList.add('fada');
+    fada.style.left = `${Math.random() * 100}vw`; // Posição horizontal aleatória
+    fada.style.top = `${Math.random() * 100}vh`; // Posição vertical aleatória
+    document.body.appendChild(fada);
+  }
+</script>
+<h1 style="color:red;">Águas e fadas divinas!</h1>
+</body>
+</center>
+</html>
+
+
+
