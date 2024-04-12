@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<center>
+<head>
+  <title>Dança da Imagem</title>
+  <style>
+    /* Estilo para a imagem */
+    #imagem {
+      position: absolute;
+    }
+    pre{
+    background-color:#4B0082;
+    }
+  </style>
+</head>
+<pre>
+A Joana vai dançar,
+seu compromisso cumprir.
+Dançando esta maravilha,
+do tempo sem vir!
+É tempo de aprender,
+esta verdade que é escrever.
+Viver não custa,
+o que custa. É aprender a viver!
+
+</pre>
+<h1 style="color:red;">A Joana vai dançar para você!</h1>
+<body>
+  <!-- Imagem a ser animada -->
+  <img id="imagem" src="https://avatars.mds.yandex.net/i?id=fec359ac63c9f98c79207afbbfbdd164e361f145-10927283-images-thumbs&n=13" alt="Imagem">
+  
+  <script>
+    // Função para fazer a imagem "dançar"
+    function dancaImagem() {
+      // Seleciona a imagem
+      var imagem = document.getElementById('imagem');
+      
+      // Define a amplitude máxima do movimento (em pixels)
+      var amplitude = 20;
+      
+      // Define a velocidade da dança (em milissegundos)
+      var velocidade = 100;
+      
+      // Função de animação
+      function animar() {
+        // Calcula um deslocamento aleatório dentro da amplitude definida
+        var deslocamentoX = Math.random() * (amplitude * 3) - amplitude;
+        var deslocamentoY = Math.random() * (amplitude * 3) - amplitude;
+        
+        // Aplica o deslocamento à posição da imagem
+        imagem.style.transform = 'translate(' + deslocamentoX + 'px, ' + deslocamentoY + 'px)';
+      }
+      
+      // Inicia a animação periodicamente
+      setInterval(animar, velocidade);
+    }
+    
+    // Chama a função para iniciar a dança quando a página carregar
+    window.onload = dancaImagem;
+  </script>
+</body>
+</center>
+</html>
